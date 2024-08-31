@@ -26,9 +26,9 @@
       {$t('routes.frontpage.title')}
 
       <div class="flex items-center gap-2" slot="extended">
-        {#if data.type_}
+        <!-- {#if data.type_}
           <Location changeDefault selected={data.type_} />
-        {/if}
+        {/if} -->
         <Sort changeDefault selected={data.sort} />
         <ViewSelect />
       </div>

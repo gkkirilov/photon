@@ -5,7 +5,7 @@ export const load = async ({ url, request }) => {
   const languages = request.headers.get('Accept-Language')?.split(',')
   const availableLangs = get(locales)
 
-  let preferredLanguage = 'en'
+  let preferredLanguage = 'bg'
 
   if (!languages) {
     await loadTranslations(preferredLanguage)

@@ -94,7 +94,7 @@
   </Tabs>
 </div>
 <div class="flex flex-row flex-wrap gap-4 mt-4 items-center">
-  <Location selected={data.type} />
+  <!-- <Location selected={data.type} /> -->
   <Sort selected={data.sort} />
 </div>
 <ul
