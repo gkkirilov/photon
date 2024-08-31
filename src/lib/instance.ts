@@ -10,11 +10,14 @@ export const LINKED_INSTANCE_URL =
     : undefined
 
 const getDefaultInstance = (): string => {
-  if (browser) {
-    return env.PUBLIC_INSTANCE_URL || 'api.spodeli.nauchi.bg'
-  } else {
-    return env.PUBLIC_INTERNAL_INSTANCE || env.PUBLIC_INSTANCE_URL || 'api.spodeli.nauchi.bg'
-  }
+  console.log(env.PUBLIC_INSTANCE_URL)
+
+  // if (browser) {
+  //   return env.PUBLIC_INSTANCE_URL || 'api.spodeli.nauchi.bg'
+  // } else {
+  //   return env.PUBLIC_INTERNAL_INSTANCE || env.PUBLIC_INSTANCE_URL || 'api.spodeli.nauchi.bg'
+  // }
+    return 'api.spodeli.nauchi.bg'
 }
 
 export const DEFAULT_INSTANCE_URL = getDefaultInstance()
